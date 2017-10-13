@@ -67,14 +67,7 @@ function calendar (state = initialCalendarState, action) {
           [meal]: recipe.label,
         }
       }
-    case REMOVE_FROM_CALENDAR :
-      return {
-        ...state,
-        [day]: {
-          ...state[day],
-          [meal]: null,
-        }
-      }
+    
     default :
       return state
   }
